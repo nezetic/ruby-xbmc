@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = %q{ruby-xbmc}
   s.version = '0.1'
-  s.date = %q{2009-05-16}
+  s.date = %q{2009-05-15}
   s.authors = ["Cedric TESSIER"]
   s.email = "nezetic at gmail d o t com"
   s.summary = %q{ruby-xbmc is a ruby wrapper for the XBMC Web Server HTTP API}
