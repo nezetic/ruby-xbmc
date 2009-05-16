@@ -1,0 +1,26 @@
+ruby-xbmc
+  a remote access library for XBMC
+=============================
+
+ruby-xbmc is a ruby wrapper for the XBMC Web Server HTTP API.
+
+It provides a remote access to any XBMC running on the local network, 
+in a simple way (methods follow the ones from XBMC API).
+
+ Example:
+
+    irb(main):001:0> require 'ruby-xbmc'
+    irb(main):002:0> xbmc = XBMC::XBMC.new(hostname, port, user, pass)
+    => #<XBMC::XBMC:0x1128e7c>
+    
+    irb(main):003:0> pp xbmc.GetMediaLocation("music")
+    [{"name"=>"Jazz", "type"=>"1", "path"=>"/mnt/data/Music/Jazz/"},
+     {"name"=>"Electro", "type"=>"1", "path"=>"/mnt/data/Music/Electro/"},
+     {"name"=>"Metal", "type"=>"1", "path"=>"/mnt/data/Music/Metal/"},
+     {"name"=>"Last.fm", "type"=>"1", "path"=>"lastfm://"}]
+    
+References
+=========
+
+http://xbmc.org/wiki/?title=Web_Server_HTTP_API
+
