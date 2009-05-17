@@ -15,3 +15,4 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.add_dependency('hpricot', '>= 0.6')
 end 
+
