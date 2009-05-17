@@ -13,6 +13,6 @@ Gem::Specification.new do |s|
   s.files = [ "README", "lib/ruby-xbmc.rb"]
   s.has_rdoc = true
   s.require_paths = ["lib"]
-  s.add_dependency('hpricot', '>= 0.6')
+  s.add_dependency('hpricot', '>= 0.6.0')
 end 
 
