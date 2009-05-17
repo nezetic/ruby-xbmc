@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q{ruby-xbmc}
-  s.version = '0.1'
+  s.version = '0.1.1'
   s.date = %q{2009-05-15}
   s.authors = ["Cedric TESSIER"]
   s.email = "nezetic at gmail d o t com"
