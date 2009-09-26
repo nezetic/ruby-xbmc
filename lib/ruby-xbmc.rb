@@ -48,7 +48,7 @@ end
 require 'iconv'
 require 'uri'
 require 'open-uri'
-require 'hpricot'
+require 'nokogiri'
 
 class Object 
     def caller_method
@@ -516,7 +516,7 @@ module XBMC
         end
 
         def parse_resp(response)
-            doc = Hpricot(response)
+            doc = Nokogiri::HTML(response)
             list = (doc/"li")
             if(list.length > 0)
                 text = list.inner_text

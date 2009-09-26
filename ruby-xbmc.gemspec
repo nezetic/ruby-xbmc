@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = %q{ruby-xbmc}
-  s.version = '0.1.1'
-  s.date = %q{2009-05-15}
+  s.version = '0.1.2'
+  s.date = %q{2009-09-26}
   s.authors = ["Cedric TESSIER"]
   s.email = "nezetic at gmail d o t com"
   s.summary = %q{ruby-xbmc is a ruby wrapper for the XBMC Web Server HTTP API}
@@ -13,6 +13,6 @@ Gem::Specification.new do |s|
   s.files = [ "README", "lib/ruby-xbmc.rb"]
   s.has_rdoc = true
   s.require_paths = ["lib"]
-  s.add_dependency('hpricot', '>= 0.6.0')
+  s.add_dependency('nokogiri', '>= 1.3.0')
 end 
 
