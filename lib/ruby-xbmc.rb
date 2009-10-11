@@ -470,6 +470,36 @@ module XBMC
             success?(parse(cmd(with_args(zoom))))
         end
 
+        # Commands that Modify Files
+        def FileCopy(src, dst)
+            success?(parse(cmd(with_args(src, dst))))
+        end
+
+        def FileDelete(filename)
+            success?(parse(cmd(with_args(filename))))
+        end
+
+        def FileDownload(filename, bare=nil)
+            parse(cmd(with_args(filename, bare)))
+        end
+
+        def FileDownloadFromInternet(url, filename=nil, bare=nil)
+            parse(cmd(with_args(url, filename, bare)))
+        end
+
+        def FileExists(filename)
+            return true if parse(cmd(with_args(filename))) == "True"
+            false
+        end
+
+        def FileSize(filename)
+            parse(cmd(with_args(filename))).to_i
+        end
+
+        def FileUpload(filename, contents)
+            success?(parse(cmd(with_args(filename, contents))))
+        end
+
         ##### END XBMC API
 
         def initialize(host, port=nil, user=nil, pass=nil)
